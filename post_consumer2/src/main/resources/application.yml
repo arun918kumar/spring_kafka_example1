@@ -1,0 +1,14 @@
+server:
+  port: 8083
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+      value-deserializer: org.example.deserializer.PostDeserializer
+    topic: post-data-topic
+    groupId: post-data-consumer2
+firestore:
+  collection: KAFKA_POST
+  key-path: path_to_json_key
