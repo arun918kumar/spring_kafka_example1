@@ -23,7 +23,7 @@ This project implements a post data consumption process using Spring Boot and Ka
 To set up and run the project, you need to:
 
 - Install Kafka.
-- Create a Kafka topic called `Post Topic`.
+- Create a Kafka topic called `post-data-topic`.
 - Build and run the Post Data Producer, Post Data Consumer 1, and Post Data Consumer 2 components.
 
 ## Usage
@@ -34,7 +34,7 @@ To set up and run the project, you need to:
 ## Setup Instructions
 
 1. Install Kafka.
-2. Create a Kafka topic named `Post Topic`.
+2. Create a Kafka topic named `post-data-topic`.
 3. Build and run the following components:
     - Post Data Producer
     - Post Data Consumer 1
