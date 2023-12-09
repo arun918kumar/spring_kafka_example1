@@ -30,6 +30,7 @@ To set up and run the project, you need to:
 
 - To send post data to the system, use the Post Data Producer component. The component accepts post data in JSON format.
 - To consume post data from the system, use either Post Data Consumer 1 or Post Data Consumer 2. Post Data Consumer 1 persists post data to a relational database, while Post Data Consumer 2 persists post data to a document database.
+- To use the post data consumer 2 make sure to replace the actual firebase api key in application.yaml. 
 
 ## Setup Instructions
 
@@ -44,10 +45,10 @@ To set up and run the project, you need to:
 
 ```bash
 # Build and run Post Data Producer
-./gradlew :post-data-producer:bootRun
+./gradlew :post_producer:bootRun
 
 # Build and run Post Data Consumer 1
-./gradlew :post-data-consumer-1:bootRun
+./gradlew :post_consumer1:bootRun
 
 # Build and run Post Data Consumer 2
-./gradlew :post-data-consumer-2:bootRun
+./gradlew :post_consumer2:bootRun
